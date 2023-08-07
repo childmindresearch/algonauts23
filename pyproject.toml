@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "algonauts23"
+description = "Algonauts 2023 challenge submission"
+authors = [
+    {name = "Connor Lane", email = "connor.lane@childmind.org"},
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT License"}
+dependencies = [
+    "datasets",
+    "hf-argparser",
+    "ipython",
+    "jupyter",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "Pillow",
+    "pycortex",
+    "scikit-image",
+    "scikit-learn",
+    "scipy",
+    "shapely",
+    "timm",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "wandb",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/cmi-dair/algonauts23"
+
+[tool.setuptools_scm]
+write_to = "algonauts23/_version.py"
+
+[tool.setuptools.packages.find]
+include = ["algonauts23*", "scripts*"]
+
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+
+[tool.mypy]
+no_strict_optional = true
+ignore_missing_imports = true

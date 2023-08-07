@@ -1,0 +1,43 @@
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Vim
+*.swp
+
+# Distribution / packaging
+*.egg-info/
+dist
+build
+.venv/
+*/_version.py
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache
+htmlcov
+
+# VScode IDE
+.vscode/
+.env
+
+# Local data and scratch
+.scratch
+dataset/algonauts_2023_challenge_data
+dataset/derived_splits
+dataset/processed
+projections
+figures
+results
+
+# Jupyter
+.ipynb_checkpoints
+
+# SLURM
+slurm-*
+job.txt
+
+# Wandb
+wandb/
