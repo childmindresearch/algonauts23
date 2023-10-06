@@ -33,7 +33,7 @@ Create a new environment.
 
 ```bash
 cd algonauts23
-python3.10 -m venv --prompt algonauts23 .venv
+python3 -m venv --prompt algonauts23 .venv
 source .venv/bin/activate
 pip install -U pip
 ```
@@ -48,6 +48,14 @@ Install the package
 
 ```bash
 pip install .
+```
+
+Optionally, you may need to download the pycortex [fsaverage subject](https://figshare.com/articles/dataset/fsaverage_subject_for_pycortex/9916166), which we use for visualization.
+
+```python
+import cortex
+
+cortex.download_subject(subject_id="fsaverage")
 ```
 
 ## Dataset preparation
