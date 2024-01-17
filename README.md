@@ -14,8 +14,8 @@ Our submission model used an `eva02_base_patch14_224.mim_in22k` trunk from [timm
 
 | Model | Val score | Test score | Config | Weights |
 | --- | --- | --- | --- | --- |
-| GroupLin-P1 | 20.4% | 58.8% | [config](config/phase1_head_only.yaml) | [weights](https://github.com/cmi-dair/algonauts23/releases/download/v0.1.0/grouplin_phase1.pt) |
-| GroupLin-P2 | 20.9% | 60.3% | [config](config/phase2_finetune.yaml) | [weights](https://github.com/cmi-dair/algonauts23/releases/download/v0.1.0/grouplin_phase2.pt) |
+| GroupLin-P1 | 20.4% | 58.8% | [config](config/phase1_head_only.yaml) | [weights](https://github.com/childmindresearch/algonauts23/releases/download/v0.1.0/grouplin_phase1.pt) |
+| GroupLin-P2 | 20.9% | 60.3% | [config](config/phase2_finetune.yaml) | [weights](https://github.com/childmindresearch/algonauts23/releases/download/v0.1.0/grouplin_phase2.pt) |
 
 **Val score**: median R<sup>2</sup> on our validation set
 
@@ -26,7 +26,7 @@ Our submission model used an `eva02_base_patch14_224.mim_in22k` trunk from [timm
 Clone the repository.
 
 ```bash
-git clone https://github.com/cmi-dair/algonauts23.git
+git clone https://github.com/childmindresearch/algonauts23.git
 ```
 
 Create a new environment.
@@ -76,7 +76,7 @@ opts="--wandb"
 
 ### Download PCA weights
 
-Our model uses a frozen group PCA embedding. You can download the weights [here](https://github.com/cmi-dair/algonauts23/releases/download/v0.1.0/group_pca_d-2048.pt).
+Our model uses a frozen group PCA embedding. You can download the weights [here](https://github.com/childmindresearch/algonauts23/releases/download/v0.1.0/group_pca_d-2048.pt).
 
 You can also re-run the group PCA using [`scripts/fit_group_pca.py`](scripts/fit_group_pca.py).
 

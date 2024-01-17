@@ -34,7 +34,7 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-"Homepage" = "https://github.com/cmi-dair/algonauts23"
+"Homepage" = "https://github.com/childmindresearch/algonauts23"
 
 [tool.setuptools_scm]
 write_to = "algonauts23/_version.py"
